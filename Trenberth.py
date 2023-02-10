@@ -112,9 +112,9 @@ geov500=partial(lat,lon,vgeo500,'x')-partial(lat,lon,ugeo500,'y')+f
 # Create cartopy axis
 fig, ax = plt.subplots(subplot_kw={'projection': ccrs.PlateCarree(),'adjustable': 'box'},dpi=1000)
 # Add geographic borders
-ax.coastlines(lw=0.25)
-ax.add_feature(cfeature.STATES.with_scale('50m'),edgecolor='black',linewidth=0.25)
-ax.add_feature(cfeature.BORDERS.with_scale('50m'),edgecolor='black',linewidth=0.25)
+ax.coastlines(lw=0.5)
+ax.add_feature(cfeature.STATES.with_scale('50m'),edgecolor='black',linewidth=0.5)
+ax.add_feature(cfeature.BORDERS.with_scale('50m'),edgecolor='black',linewidth=0.5)
 # Set aspect ratio, establish twin axis for seconday title (further down)
 ax.set_box_aspect(len(lat[:,0])/len(lat[0,:]))
 # Filled contours of absolute geostrophic vorticity
